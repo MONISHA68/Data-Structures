@@ -39,6 +39,17 @@ void display()
         printf("NULL");
     }
 }
+void count()
+{
+    int count=0;
+    temp=head;
+    while(temp!=NULL)
+    {
+        count++;
+        temp=temp->next;
+    }
+    printf("\n%d nodes",count);
+}
 int main(void)
 {
     int n,i;
@@ -48,5 +59,6 @@ int main(void)
         create();
     }
     display();
+    count();
 	return 0;
 }
